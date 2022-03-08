@@ -11,7 +11,7 @@ public class Practice01_1 {
         int result = 0;
         for (int i = 0; i < min.length; i++) {
             for (int j = 0; j < min.length; j++) {
-                if(min[i] < min[j]) {
+                if (min[i] < min[j]) {
                     result = min[i];
                 }
             }
