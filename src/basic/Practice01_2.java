@@ -8,16 +8,12 @@ public class Practice01_2 {
 
     private static int maxValue(int data1, int data2, int data3, int data4, int data5) {
         int[] max = {data1, data2, data3, data4, data5};
-        int result = 0;
 
         for (int i = 0; i < max.length; i++) {
-            for (int j = 0; j < max.length; j++) {
-                if (max[i] > max[j]) {
-                    result = max[i];
-                }
+            if(max[0] < max[i]) {
+                max[0] = max[i];
             }
         }
-
-        return result;
+        return max[0];
     }
 }

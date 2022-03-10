@@ -8,14 +8,11 @@ public class Practice01_1 {
 
     private static int minValue(int data1, int data2, int data3, int data4) {
         int[] min = {data1, data2, data3, data4};
-        int result = 0;
         for (int i = 0; i < min.length; i++) {
-            for (int j = 0; j < min.length; j++) {
-                if (min[i] < min[j]) {
-                    result = min[i];
-                }
+            if(min[0] > min[i]) {
+                min[0] = min[i];
             }
         }
-        return result;
+        return min[0];
     }
 }
